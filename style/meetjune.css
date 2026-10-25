@@ -9,7 +9,9 @@ iframe {
 
 .june-gallery{
     display: flex;
-
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: auto;
 }
 
 .june-gallery img {

@@ -1,6 +1,7 @@
 body {
     background-color: var(--color-background);
     font-family: var(--font-primary);
+    line-height: 1.6;
 }
 
 h1 {
@@ -162,4 +163,12 @@ nav[aria-label="Social Media"] a {
 
 nav[aria-label="Social Media"] a:hover {
     color: var(--color-primary);
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 3px;
 }
