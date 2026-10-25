@@ -5,34 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John's Webpage - WatchTower</title>
-    <link rel="icon" type="image/png" href="../images/june-logo.png">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/variables.css">
+    <link rel="stylesheet" href="../style/projectpages.css">
 </head>
-
 <body>
     <header>
         <nav aria-label="Main Navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="journal.html">Journal</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="meetjune.html">Meet June!</a> </li>
+            <ul class="desktop-nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../journal.html">Journal</a></li>
+                <li><a href="../resume.html">Resume</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../meetjune.html">Meet June!</a> </li>
             </ul>
+
+            <details class="mobile-nav">
+                <summary>☰ Menu </summary>
+
+                <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../journal.html">Journal</a></li>
+                <li><a href="../resume.html">Resume</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../meetjune.html">Meet June!</a> </li>
+            </ul>
+            </details>
         </nav>
     </header>
 
     <main>
-        <a href="../projects.html">← Back to Projects</a>
-
         <article>
             <picture>
                 <source
                     media="(max-width: 600px)"
-                    srcset="../images/project-mobile.png">
+                    srcset="../images/watchtower-mobile.png">
                 <img
-                    src="../images/project.png"
+                    src="../images/watchtower.png"
                     alt="Featured image of the WatchTower project">
             </picture>
 
