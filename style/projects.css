@@ -25,6 +25,7 @@ project-card {
     margin: 15px;
 }
 
+/* styles images directly nested inside figures within project cards */
 project-card > article > figure > img {
     display: block;
     width: 100%;
