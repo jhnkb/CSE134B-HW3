@@ -31,6 +31,22 @@ nav[aria-label="Main Navigation"] ul {
     justify-content: center;
 }
 
+nav[aria-label="Main Navigation"] a{
+    display: block;
+    padding: 0.2rem 1rem;
+    background-color: var(--color-secondary);
+    border-radius: var(--radius-small);
+    text-decoration: none;
+    color: black;
+    line-height: 2.5;
+    gap: 0.625%;
+}
+
+nav[aria-label="Main Navigation"] a:hover{
+    background: var(--color-hover);
+    color: white;
+}
+
 nav[aria-label="Social Media"] {
     display: flex;
     gap: 1.5rem;
