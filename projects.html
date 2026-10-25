@@ -4,21 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John's Webpage - Projects</title>
-    <link rel="icon" type="image/png" href="images/june-logo.png">
-
-    <style>
-    project-card {
-        display: block;
-        border: 1px solid gray;
-        padding: 20px;
-        margin: 15px;
-    }
-    </style>
+    <link rel="icon" type="image/png" href="images/logo.svg">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/variables.css">
+    <link rel="stylesheet" href="style/projects.css">
 </head>
 <body>
     <header>
         <nav aria-label="Main Navigation">
-            <ul>
+            <ul class="desktop-nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -27,6 +21,20 @@
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="meetjune.html">Meet June!</a> </li>
             </ul>
+
+            <details class="mobile-nav">
+                <summary>☰ Menu </summary>
+
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="meetjune.html">Meet June!</a> </li>
+            </ul>
+            </details>
         </nav>
     </header>
 
@@ -52,7 +60,7 @@
 
             <project-card>
                 <article class="bioinformatics">
-                    <img src="images/hif3a.png" alt="Hif3a project">
+                    <img src="images/hif3a.webp" alt="Hif3a project">
                     <h2>Hif3a Isoform Analysis</h2>
                     <p>
                         Investigating Hif3a transcript isoforms during

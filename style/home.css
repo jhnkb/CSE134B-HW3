@@ -44,6 +44,7 @@ nav[aria-label="Homepage Navigation"] a{
 nav[aria-label="Homepage Navigation"] a:hover{
     background: var(--color-hover);
     color: white;
+    transform: scale(1.5);
 }
 
 .logo {
