@@ -4,6 +4,7 @@ body {
 
 main {
     font-family: var(--font-primary);
+    box-sizing: border-box;
     max-width: 800px;
     margin: auto;
     padding: 1rem;
@@ -23,7 +24,12 @@ footer {
     padding: 1rem;
 }
 
-nav[aria-label="Main Navigation"] ul {
+nav[aria-label="Main Navigation"] {
+    display: flex;
+    justify-content: center;
+}
+
+nav[aria-label="Main Navigation"] .desktop-nav {
     display: flex;
     gap: 2rem;
     list-style: none;
@@ -31,6 +37,10 @@ nav[aria-label="Main Navigation"] ul {
     padding: 5px;
     margin: 0;
     justify-content: center;
+}
+
+nav[aria-label="Main Navigation"] .mobile-nav {
+    display: none;
 }
 
 nav[aria-label="Main Navigation"] a{
@@ -47,6 +57,48 @@ nav[aria-label="Main Navigation"] a{
 nav[aria-label="Main Navigation"] a:hover{
     background: var(--color-hover);
     color: white;
+}
+
+@media (max-width: 768px) {
+
+    nav[aria-label="Main Navigation"] .desktop-nav {
+        display: none;
+    }
+
+    nav[aria-label="Main Navigation"] .mobile-nav {
+        display: block;
+        text-align: center;
+    }
+
+    .mobile-nav summary {
+        cursor: pointer;
+        padding: 0.75rem 1rem;
+        background-color: var(--color-secondary);
+        border-radius: var(--radius-small);
+        list-style: none;
+    }
+
+    .mobile-nav summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .mobile-nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        list-style: none;
+        padding: 0;
+        margin: 0.5rem 0 0;
+    }
+
+    .mobile-nav li {
+        margin: 0;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
 
 nav[aria-label="Social Media"] {
